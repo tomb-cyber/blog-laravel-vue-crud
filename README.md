@@ -5,6 +5,7 @@ This project was made as a learning experience. I utilized Laravel, Vue, Scss an
 The site is a simple CRUD-site with authentication, authorization and pagination features provided by Laravel. On the site a user can:
 - view published blog posts and descriptions of their authors
 - login, logout, register and delete their account (deletion also deletes the user's posts)
+- get password reset -link via email
 - create, edit and delete their own posts
 - change their name and description as an author
 
