@@ -1,0 +1,313 @@
+$light-purple: #dfe0f3;
+$base-purple: #a2a5da; 
+$dark-blue: #0f1133;
+$brown: #b39d5f;
+$body-font-size: calc(1vw + 2px);
+$standard-border-radius: 0.52vw;
+
+html, body {
+    height: 100%;
+}
+
+
+.bg-dark-blue {
+    background-color: $dark-blue;
+}
+
+.custom-brown {
+    color: $brown;
+    padding: 0px 5px;
+}
+
+.footer-border {
+    border-right: 1px solid $brown;
+}
+
+footer {
+        height: 60px;
+        margin-top: -60px;
+    a {
+        font-size: calc(14px + 0.3vw);
+        margin: 0;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+header {
+    height: 13.1%;
+    margin-bottom: 1%;
+    h1 {
+        font-size: calc(12px + 1vw);
+        margin: 0;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+#container {
+    min-height: 100%;
+    padding-bottom: 60px;
+}
+
+.account-button-div,
+.header-button-div {
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    margin: 7px;
+    position: absolute;
+}
+
+.account-button-div {
+    right: 0px;
+}
+
+.account_icon, .active {
+    float: right;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.account_icon {
+    filter: invert(73%) sepia(21%) saturate(683%) hue-rotate(200deg) brightness(90%) contrast(89%);
+}
+
+.active {
+    filter: invert(90%) sepia(15%) saturate(243%) hue-rotate(200deg) brightness(99%) contrast(92%);
+}
+
+.sidenav-icon {
+    filter: invert(73%) sepia(21%) saturate(683%) hue-rotate(200deg) brightness(90%) contrast(89%);
+    outline: none;
+    cursor: pointer;
+}
+
+.login-button-div {
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    position: absolute;
+}
+
+.login-button {
+    color: $base-purple;
+    font-size: 18;
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.post-block {
+    border-style: solid;
+    border-color: $light-purple;
+    border-radius: $standard-border-radius;
+    margin: 2px 0;
+    padding: 1%;
+    cursor: pointer;
+    &:hover {
+        background-color: $light-purple;
+    }
+    &-create {
+        @extend .post-block;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2%;
+        button {
+            background-color: inherit;
+            border: none;
+            font-size: $body-font-size;
+            width: 100%;
+            height: 100%;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.block-title {
+    h1 {
+        font-size: calc(1.5vw + 2px);
+        color: black;
+    }
+}
+
+.block-excerpt {
+    font-size: $body-font-size;
+}
+
+.block-author {
+    padding-left: 1%;
+    color: grey;
+    font-size: $body-font-size;
+}
+
+.author-info-block {
+    position: fixed;
+    top: 1%;
+    width: 15%;
+    background-color: $light-purple;
+    margin-top: 5%;
+    margin-right: 3%;
+    border-radius: $standard-border-radius;
+    padding: 1%;
+    text-align: center;
+}
+
+.info-about {
+    padding: 2%;
+    color: darkgray;
+    font-size: $body-font-size;
+}
+
+.info-description {
+    padding: 2% 1%;
+    font-size: $body-font-size;
+}
+
+.body-text {
+    padding: 2%;
+    border-radius: $standard-border-radius;
+    background-color: $light-purple;
+    p {
+        font-size: $body-font-size;
+    }
+}
+
+.card {
+    background-color: $light-purple;
+}
+
+.account-info {
+    padding: 2%;
+    border-radius: $standard-border-radius;
+    background-color: $light-purple;
+}
+
+.account-menu {
+    background-color: $light-purple;
+    margin-top: 5%;
+    margin-right: 3%;
+    border-radius: $standard-border-radius;
+    padding: 1%;
+    text-align: center;
+}
+
+.menu-item, .menu-logout {
+    width: 50%;
+    padding: 2%;
+    margin: 2% auto;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0 0 1px 0;
+    display: block;
+    color: $dark-blue;
+    &:hover {
+        text-decoration: none;
+        color: $base-purple;
+    }
+}
+
+.menu-logout {
+    border: none;
+    background-color: inherit;
+    &:focus {
+        outline: none;
+    }
+}
+
+.edit-button-block {
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 0 0 1px 0;
+    padding: 0 0 3% 0;
+    div {
+        float: right;
+    }
+    form {
+        display: inline;
+        margin-right: 10px;  
+    }
+}
+
+.delete-button {
+    color: red;
+    background-color: inherit;
+    border: none;
+    &:hover {
+        text-decoration-line: underline;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.change-password-block {
+    text-align: center;
+    margin-top: 5%;
+    a {
+        margin: 10%;
+    }
+}
+
+.confirmation {
+    text-align: center;
+    width: 70%;
+    padding: 4%;
+    background-color: $light-purple;
+    margin: 10% auto;
+    border-radius: $standard-border-radius;
+}
+
+.body-font-size {
+    font-size: $body-font-size;
+}
+
+.dropdown-menu {
+    position: absolute;
+    margin-top: -0.1vw;
+    left: -9vw;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: $standard-border-radius;
+    border-width: 0.2vw;
+    border-color: $base-purple;
+    min-width: max-content;
+    padding: 0;
+    overflow: hidden;
+    
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menu-helper {
+    &:hover {
+        .dropdown-menu {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
+
+.dropdown-menu-item {
+    padding: 0.5vw 1vw;
+    font-size: $body-font-size;
+    text-align: center;
+    &:hover {
+        background-color: $light-purple;
+        cursor: pointer;
+    }
+    a {
+        color: black;
+        &:hover {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
