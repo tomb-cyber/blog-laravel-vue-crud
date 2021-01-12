@@ -2,7 +2,7 @@
 
 This project was made as a learning experience. I utilized Laravel, Vue, Scss and for some styling Bootstrap. I understand that some things could have been made more efficiently or consistently (for example using only Vue or Laravel components, not both), but to get a feel for the most features I used them diversely.
 
-The site is a simple CRUD-site with authentication, authorization and pagination features provided by Laravel. On the site a user can:
+The site is a simple CRUD-site with authentication, authorization, form validation and pagination features provided by Laravel. On the site a user can:
 - view published blog posts and descriptions of their authors
 - login, logout, register and delete their account (deletion also deletes the user's posts)
 - get password reset -link via email
