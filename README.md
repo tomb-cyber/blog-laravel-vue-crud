@@ -20,4 +20,3 @@ The setup requires npm, composer and mysql (default in the files). Then
 
 ## Demo gif
 ![alt text](https://github.com/tomb-cyber/blog-laravel-vue-crud/blob/master/blog-demo.gif "Demo gif")
-<img src="https://github.com/tomb-cyber/blog-laravel-vue-crud/blob/master/blog-demo.gif" width="1600" height="900">
