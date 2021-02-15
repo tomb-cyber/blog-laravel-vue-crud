@@ -18,11 +18,6 @@ class UserController extends Controller
             return redirect('/blogs');
         }
     }
-
-    public function store()
-    {
-        
-    }
     
     public function edit()
     {
@@ -32,7 +27,6 @@ class UserController extends Controller
     public function update()
     {
         $user = Auth::user();
-        //$this->authorize('update-post', $blogPost);
 
         $user->update(request()->validate([
             'name' => ['required', 'min:2', 'max:20'],
